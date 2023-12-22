@@ -9,9 +9,10 @@
 </template>
 
 <script>
+import { defineComponent } from 'vue';
 import { BrowserMultiFormatReader, Exception } from "@zxing/library";
 
-export default {
+export default defineComponent({
   name: "stream-barcode-reader",
 
   data() {
@@ -49,7 +50,7 @@ export default {
       });
     },
   },
-};
+});
 </script>
 
 <style scoped>

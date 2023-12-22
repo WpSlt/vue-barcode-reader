@@ -1,5 +1,7 @@
 <template>
+  <!--
   <input @change="onChangeInput" type="file" name="image" accept="image/*" capture="environment" />
+  -->
 </template>
 
 <script>
