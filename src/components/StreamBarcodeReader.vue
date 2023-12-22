@@ -9,9 +9,11 @@
 </template>
 
 <script>
+
+import { defineComponent } from 'vue';
 import { BrowserMultiFormatReader, Exception } from "@zxing/library";
 
-export default {
+export default defineComponent({
   name: "stream-barcode-reader",
 
   data() {
@@ -49,7 +51,7 @@ export default {
       });
     },
   },
-};
+});
 </script>
 
 <style scoped>
@@ -57,6 +59,7 @@ video {
   max-width: 100%;
   max-height: 100%;
 }
+
 .scanner-container {
   position: relative;
 }
@@ -84,12 +87,14 @@ video {
   -webkit-animation: scanning 2s infinite;
   animation: scanning 2s infinite;
 }
+
 @-webkit-keyframes scanning {
   50% {
     -webkit-transform: translateY(75px);
     transform: translateY(75px);
   }
 }
+
 @keyframes scanning {
   50% {
     -webkit-transform: translateY(75px);
